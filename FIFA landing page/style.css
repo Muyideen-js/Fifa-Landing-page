@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+} */
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(46, 0, 127, 0.524)), url(/images/neymar-brazil-v-uruguay-fifa-world-cup-quaifier-2021-2.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+
+}
+
+nav {
+    
+    position: fixed;
+    top: 0; 
+    width: 100vw;
+    min-height: 3.5rem;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1030;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: background-color .2s linear;
+}
+
+nav>.logo {
+    float: left;
+}
+
+nav>.logo h1 {
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+nav svg{
+    display: none;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 32%;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+nav select {
+    float: right;
+    margin-left: 250%;
+    width: 85px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgb(99, 3, 255), rgb(41, 0, 108));
+    color: #fff;
+    font-size: 15px;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+}
+
+nav select option {
+    background: rgb(56, 0, 101);
+    outline: none;
+}
+
+.toggle svg {
+    color: #fff;
+}
+
+.both {
+    display: flex
+}
+
+/* .icon{
+    cursor: pointer;
+    float: right;
+    margin-left: 100px;
+}
+.icon svg{
+    margin-right: 50px;
+}
+.icon svg:hover{
+    color: grey;
+} */
+.sign-up button {
+    position: absolute;
+    right: 100px;
+    float: right;
+    margin-left: 80px;
+    background: linear-gradient(rgb(99, 3, 255), rgb(41, 0, 108));
+    padding: 15px 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.text {
+    text-align: left;
+    padding-top: 20%;
+    margin-left: 10%;
+}
+
+.text h1 {
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+}
+
+.text p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.text button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.text button:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+}
+
+.image img {
+    margin: 120px;
+    width: 75%;
+    margin-right: 10px;
+    transform: translateZ(50px);
+}
+
+.timer {
+    background: linear-gradient(rgb(99, 3, 255), rgb(41, 0, 108));
+    min-height: 25vh;
+    display: flex;
+}
+
+.timer h2 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 45px;
+    padding-left: 10%;
+    color: #fff;
+}
+
+.timer h2,
+small {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.countdownContainer {
+    margin-left: 8%;
+    line-height: 10px;
+}
+
+.countdownContainer td {
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    background: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+table {
+    z-index: 2;
+    background: #fafafa;
+    box-shadow: 0 0 20px grey;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 100px;
+    margin-top: 20px;
+}
+
+th {
+    background: #9504af;
+    color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.stop-watch img {
+    width: 170px;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+}
+
+.stop-watch h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.Group {
+    background: linear-gradient(to left, rgb(99, 3, 255), rgb(41, 0, 108));
+    min-height: 100vh;
+}
+
+.lgnd-img img {
+    width: 100%;
+    background: #fff;
+    height: 50%;
+    transition: transform .3s;
+}
+
+.lgnd-img img:hover {
+    transform: scaleY(1.1);
+}
+
+.lgnd-img p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.legends {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.lgnd-img {
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: -1px 0 10px #000;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    transition: transform .3s;
+}
+
+.lgnd-img:hover {
+    transform: translateY(7px);
+}
+
+section h1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+}
+
+
+/*Group section*/
+
+.grdnt-bg {
+    background: linear-gradient(rgb(99, 3, 255), rgb(41, 0, 108));
+    height: 200vh;
+    width: 100%;
+}
+
+.grdnt-bg h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.group-list {
+    width: 30%;
+    height: 40%;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: -1px 0 10px #000;
+
+}
+
+.grdnt-bg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.group-list p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    color: rgb(99, 3, 255);
+}
+
+.list-grp {
+    display: flex;
+    background: #cacaca;
+    width: 90%;
+    padding-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.list-grp:hover {
+    transform: scale(1.1);
+}
+
+.list-grp img {
+    width: 35px;
+    height: 30px;
+    margin-top: 34px;
+    margin-left: 30px;
+}
+
+.list-grp p {
+    margin-left: 20px;
+}
+
+.first-staduim {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.first-staduim img {
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background .5s;
+    background: rgba(36, 0, 66, 0.412);
+
+}
+
+.layer:hover {
+    background: rgba(36, 0, 66, 0.603);
+
+}
+
+.first-staduim {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: -1px 0 10px #000;
+    margin-left: 45px;
+}
+
+.layer h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 70%;
+
+}
+
+.stadium {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+
+
+
+/* @keyframes scroll{
+    animation: scroll 40s linear infinite;
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+} */
+
+footer {
+    background: linear-gradient(rgb(99, 3, 255), rgb(41, 0, 108));
+    min-height: 40vh;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+
+footer>div>h2 {
+    color: #fff;
+    margin-left: 45%;
+    padding-top: 30px;
+    border-bottom: 3px solid;
+    width: 35px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer>div>small {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 41.1%;
+}
+
+footer>img {
+    width: 13%;
+    position: absolute;
+    top: 608%;
+    left: 50px;
+}
+
+.right>img {
+    width: 13%;
+    position: absolute;
+    top: 608%;
+    right: 50px;
+}
+
+@media screen and (max-width:768px) {
+
+    .sign-up button {
+        display: none;
+    }
+
+    .both {
+        display: none;
+    }
+
+    nav ul li{
+        font-family: 10px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+    nav{
+        width: 700px;
+        margin-right: 50px;
+    }
+    nav ul {
+        display: flex;
+        float: right;
+        padding-right: 10px;
+    }
+    .text {
+        margin-top: 80px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .image img{
+        width: 70%;
+        position: absolute;
+        top: 30%;
+        left: -5%;
+    }
+
+    .timer h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .timer {
+        padding-right: 150px;
+    }
+
+    .stop-watch {
+        display: none;
+    }
+
+    .group-list {
+        width: 350px;
+        height: 350px;
+    }
+
+    #remove1 {
+        display: none;
+    }
+
+    #remove2 {
+        display: none;
+    }
+
+    .stadiums {
+        overflow-x: scroll;
+    }
+
+    nav>.logo {
+        text-align: center;
+        padding-left: 170px;
+    }
+    .toggle svg{
+        color: #fff;
+        display: block;
+        float: right;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+    nav svg{
+        display: block;
+        color: #fff;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    footer>div>small{
+       margin-left: auto ;
+       padding-left: 150px;
+       padding-bottom: 5px;
+    }
+    footer p{
+        padding-left: 40px;
+    }
+    .right>img{
+        display: none;
+    }
+    footer>img {
+       display: none;
+    }
+    .stadium {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    footer>div>small {
+        padding-left: 175px;
+    }
+    .text button{
+        padding: 13px 25px;
+    }
+}
+@media screen and (max-width:414px){
+    nav ul{
+        padding-right: 80px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    nav>.logo{
+           padding-left: 18%;
+    }
+    .image img{
+        width: 102%;
+        position: absolute;
+        left: -130px;
+    }
+    .timer{
+        min-height: 15vh;
+    }
+    table{
+        padding-right: 150px;
+        border-collapse: collapse;
+    }
+    .timer h2{
+        padding-left: 5%;
+    }
+    .stadium{
+        margin-left: -3%;
+    }
+    .first-staduim{
+        width: 370px;
+    }
+    #theFisrt{
+        margin-left: 8%;
+    }
+    footer>div>small{
+        padding-left: 30%;
+    }
+}
+@media screen and (max-width:375px) {
+    nav ul{
+        margin-right: 36.6%;
+    }
+    nav>.logo h1{
+        margin-left: 15%;
+    }
+    .image img{
+        width: 80%;
+        position: absolute;
+        left: -80px;
+        top: 250px;
+    }
+    .timer h2{
+        font-size: 14px;
+        padding-left: 0%;
+
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    .first-staduim{
+        width: 300px;
+        height: 500px;
+        margin-left: 60px;
+    }
+    #theFisrt{
+        margin-left: 50px;
+    }
+    .timer {
+        min-height: 20vh;
+    }
+    footer p{
+        padding-left: 0%;
+    }
+    footer>div>small{
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width:390px){
+    .timer{
+        flex-direction: column;
+    }
+    .timer h2{
+        text-align: center;
+        padding-left: 70%;
+        font-size: 20px;
+        padding-top: 0%;
+    }
+    table{
+        margin: 20px 850px;
+    }
+    .countdownContainer{
+        margin-left: 30%;
+    }
+    nav ul{
+        padding-right: 96.7px;
+    }
+    footer>div>small{
+        padding-left: 20%;
+    }
+    footer p{
+        padding-right: 80px;
+    }
+    footer h2{
+        padding-left: 0px;
+    }
+}
